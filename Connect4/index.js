@@ -32,7 +32,6 @@
         var col = $(e.currentTarget);
         var holesInCol = col.find(".hole");
         var addedClass = false;
-
         for (var i = 5; i >= 0; i--) {
             if (
                 !holesInCol.eq(i).hasClass("player1") &&
@@ -47,11 +46,9 @@
                 alert("Hey!!!! This column is already Full!!!!");
             }
         }
-
         if (!addedClass) {
             return;
         }
-
         var slotsInRow = $(".column .slot:nth-child(" + (i + 1) + ") .hole");
 
         if (checkForVictory(slotsInRow)) {
@@ -75,7 +72,6 @@
                 allHoles.removeClass("player1 player2");
             });
         }
-
         switchPlayers();
         turnIndicator();
     });
@@ -129,47 +125,3 @@
         }
     }
 })();
-
-// (function() {
-//     var currentPlayer = "player1";
-//
-//     $(".column").on("click", function(e) {
-// var col = $(e.currenttarget);
-// var slots = col.find('slot');
-// var addedClass = false;
-//         for (var i = 5; i >= 0; i--) {
-//             if (!slotsInCol.eq(i).hasClass('player1') && !slotsInCol.eq(i).hasClass('player2')){
-//                 slotsInCol.eq(i).addClass(currentPlayer);
-//                 addedClass = true;
-//                 break;
-//             }if (!addedClass) {
-//                 return;
-//             }
-//             if (checkForVictory(slotsInCol)) {
-//                 //show message
-//             } else if (checkForVictory($('row' + i))){
-//                 //show victory message
-//             }
-//         }
-//     });
-//
-// function checkForVictory(slots) {
-//     var count = 0
-//     for (var i = 0; i < slots.length; i++) {
-//         if (slots.eq[i].hasClass(currentPlayer)){
-//             count++;
-//             if (count == 4);{
-//                 return true;
-//             }
-//         } else count = 0;
-//     }
-// }
-//
-// function switchPlayers() {
-//     if (currentplayer == "player1") {
-//         currentplayer = "player2";
-//     } else {
-//         currentplayer = "player1";
-//     }
-// }
-// })();
