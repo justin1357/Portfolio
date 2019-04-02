@@ -1,6 +1,4 @@
-# Portfolio
-
-## Connect 4
+# Connect 4
 
 Connect Four is a front end project which uses JQuery Javascript syntax to deal with the logic of the game.
 
