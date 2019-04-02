@@ -9,4 +9,8 @@ javascript can view this as being occupied by a certain player depending on whic
 
 Diagonally is and was the greater challenge of this project, however sometimes the simpler solution is often the most elegant to review for fellow coders. Using an array to specify which combinations are in fact the winning combos, we can then use loops to loop through and search for 4 in a row which then find a winner diagonally.
 
-![Connect 4 Logo](/CaptureC4.png)
+![Connect 4](CaptureC4.PNG)
+
+## Petition
+
+![Petition Screenshot](CapturePetition.PNG)
